@@ -1,0 +1,52 @@
+{
+  "name": "ftio-sdk",
+  "description": "SDK to build tool for free-tools.io",
+  "version": "0.0.0",
+  "author": "free-tools-io @free-tools-io",
+  "bin": {
+    "ftio": "./bin/run"
+  },
+  "bugs": "https://github.com/free-tools-io/ftio-sdk/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "shelljs": "^0.8.4",
+    "validatorjs": "^3.19.2"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "globby": "^10.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/free-tools-io/ftio-sdk",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "ftio",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "free-tools-io/ftio-sdk",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}

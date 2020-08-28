@@ -1,0 +1,37 @@
+<div class='card' style='margin-top: 10px; margin-bottom: 10px'>
+    <div class="d-flex m-3">
+        <ion-icon style='font-size: 5em; color: darkgreen' name="<%= toolMeta.icon %>"></ion-icon>
+        <div class="lh-100" style='margin-left:10px'>            
+            <h1><%= toolMeta.name %></h1>
+            <p>by <%= toolMeta.author %> | <%= toolMeta.description %></p>
+            
+        </div>
+    </div>
+</div>
+
+<div class='row'>
+<% if (inputPresent) { %>
+<div class='col-lg-<%= output.status ? 4 : 12 %>'>
+    <div class="card border-primary">
+        <div class="card-header bg-info text-white">
+          Input
+        </div>
+        <div class="card-body">
+            <%- include (toolBase + "/input" ) %>
+        </div>
+    </div>
+</div>
+<% } %>
+<% if (output.status) { %>
+<div class='col-lg-<%= inputPresent ? 8 : 12 %>'>
+    <div class="card border-dark">
+        <div class="card-header bg-dark text-white">
+          Output
+        </div>
+        <div class="card-body">
+            <%- include (toolBase + "/output" ) %>
+        </div>
+    </div>
+</div>
+<% } %>
+</div>
