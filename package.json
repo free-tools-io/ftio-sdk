@@ -1,7 +1,7 @@
 {
   "name": "ftio-sdk",
   "description": "SDK to build tool for free-tools.io",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "free-tools-io @free-tools-io",
   "bin": {
     "ftio": "./bin/run"
