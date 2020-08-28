@@ -40,15 +40,10 @@ Describe the command here
 USAGE
   $ ftio create
 
-OPTIONS
-  -n, --name=name  name to print
-
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
-
-_See code: [src/commands/create.js](https://github.com/free-tools-io/ftio-sdk/blob/v0.0.0/src/commands/create.js)_
 
 ## `ftio help [COMMAND]`
 
@@ -65,8 +60,6 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
-
 ## `ftio start`
 
 Describe the command here
@@ -75,13 +68,8 @@ Describe the command here
 USAGE
   $ ftio start
 
-OPTIONS
-  -n, --name=name  name to print
-
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
-
-_See code: [src/commands/start.js](https://github.com/free-tools-io/ftio-sdk/blob/v0.0.0/src/commands/start.js)_
 <!-- commandsstop -->
