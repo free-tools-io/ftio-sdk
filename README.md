@@ -1,7 +1,9 @@
 ftio-sdk
 ========
 
-SDK to build tool for free-tools.io
+SDK to build free tools for the public on the internet. Your tools will be published to https://free-tools.io
+
+More technical details on tool development is covered at https://github.com/free-tools-io/free-tools-io
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/ftio-sdk.svg)](https://npmjs.org/package/ftio-sdk)
@@ -9,67 +11,39 @@ SDK to build tool for free-tools.io
 [![License](https://img.shields.io/npm/l/ftio-sdk.svg)](https://github.com/free-tools-io/ftio-sdk/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+* [Steps](#steps)
+* [Create New Tool](#create-new-tool)
+* [Run Local Setup](#run-local-setup)
 <!-- tocstop -->
-# Usage
-<!-- usage -->
+
+# Steps
+* Fork Github project https://github.com/free-tools-io/free-tools-io to your account
+* Create new folder for your tool (Folder name to be clear and denotes the tool)
+* Inside the folder create your tool with this SDK
+* After testing, Raise pull-request to https://github.com/free-tools-io/free-tools-io at master branch
+* After review and validation, it would be deployed to production at https://free-tools.io
+
+# Create new tool
+
 ```sh-session
 $ npm install -g ftio-sdk
-$ ftio COMMAND
-running command...
-$ ftio (-v|--version|version)
-ftio-sdk/0.0.0 darwin-x64 node-v12.18.3
-$ ftio --help [COMMAND]
-USAGE
-  $ ftio COMMAND
-...
-```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
-* [`ftio create`](#ftio-create)
-* [`ftio help [COMMAND]`](#ftio-help-command)
-* [`ftio start`](#ftio-start)
-
-## `ftio create`
-
-Describe the command here
-
-```
-USAGE
-  $ ftio create
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+$ ftio create
 ```
 
-## `ftio help [COMMAND]`
+# Run Local Setup
 
-display help for ftio
-
-```
-USAGE
-  $ ftio help [COMMAND]
-
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
-```
-
-## `ftio start`
-
-Describe the command here
+Run below command start your local setup to test the tool.
 
 ```
-USAGE
-  $ ftio start
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+$ ftio start
 ```
-<!-- commandsstop -->
+
+After successfully started, launch tool at http://localhost:3000
+
+After completing the testing, commit to your forked repo and raise pull-request to https://github.com/free-tools-io/free-tools-io (`master` branch).
+
+That's all. You are done. Wait for our response.
+
+For any queries, ask at https://github.com/free-tools-io/free-tools-io/issues/new
+
+Thank You !!!
