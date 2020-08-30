@@ -5,7 +5,7 @@ SDK to build free tools for the public on the internet. Your tools will be publi
 
 More detailed technical information on tool development is covered at https://github.com/free-tools-io/free-tools-io
 
-The same SDK can be used to launch any https://free-tools.io tool in your local machine.
+The same SDK can also be used to launch any https://free-tools.io tool in your local machine. The steps can be found in README.md of individual tools.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/ftio-sdk.svg)](https://npmjs.org/package/ftio-sdk)
